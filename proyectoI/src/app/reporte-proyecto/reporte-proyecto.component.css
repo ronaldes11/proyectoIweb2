@@ -1,0 +1,6 @@
+.cuerpo {
+   padding:10px 0 10px 0;
+   overflow-x:hidden;
+   overflow-y:auto; /* Hace que se ajuste a la columna más alta en ff */
+   height:100%; /* Hace que se ajuste a la columna más alta  en ie6 */
+}

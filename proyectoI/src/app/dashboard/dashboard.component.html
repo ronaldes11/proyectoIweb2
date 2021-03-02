@@ -1,0 +1,23 @@
+<div class="marco">
+    <div class="cabecera">
+        <h2>Proyect:</h2>
+             {{proyectos.name}}
+                </div>
+                <div class="cuerpo">
+                    <div class="columna_derecha">
+                          <h2>Done</h2>
+                    </div>
+                    <div class="columna_izquierda">
+                        <h2>To do</h2>
+                        {{proyectos.icon}}
+                     <th class="text-right">
+                 <a class="btn btn-success" [routerLink]="['/estados/']">
+                 <i class="fa fa-plus" aria-hidden="true"></i>
+                 </a>    
+                    </div>
+                    <div class="columna_central">
+                        <h2>Doing</h2>
+                       
+                    </div>
+                </div>
+           </div>
