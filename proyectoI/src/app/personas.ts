@@ -1,7 +1,8 @@
 export class Personas {
   id: string;
   name: string;
-  avatar: string;
+  email: string;
+  password: string;
   constructor() {
     // code...
   }
