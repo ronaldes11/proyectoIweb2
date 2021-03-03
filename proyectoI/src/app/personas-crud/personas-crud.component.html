@@ -4,8 +4,10 @@
   <input class="form-control" type="text" size="5px" [(ngModel)]="current_personas.id">
   <label>Name:</label>
   <input class="form-control" type="text" size="5px" [(ngModel)]="current_personas.name">
-  <label>Avatar:</label>
-  <input class="form-control" type="text" size="5px" [(ngModel)]="current_personas.avatar">
+  <label>Email:</label>
+  <input class="form-control" type="text" size="5px" [(ngModel)]="current_personas.email">
+  <label>Password:</label>
+  <input class="form-control" type="password" size="5px" [(ngModel)]="current_personas.password">
   <button class="btn btn-primary"(click)="save()">
     <i class="fa fa-floppy-o" aria-hidden="true"></i>
     Save
@@ -19,7 +21,8 @@
   <tr>
   	<th>Id</th>
     <th>Name</th>
-    <th>Avatar</th>
+    <th>Email</th>
+    <th>Password</th>
     <th class="text-right">
       <button class="btn btn-success" (click)="new()"><i class="fa fa-plus" aria-hidden="true"></i></button>
       <button class="btn btn-info" (click)="ngOnInit()"><i class="fa fa-refresh" aria-hidden="true"></i></button>
@@ -28,7 +31,8 @@
   <tr *ngFor="let row of data">
   	<td>{{row.id}}</td>
     <td>{{row.name}}</td>
-    <td>{{row.avatar}}</td>
+    <td>{{row.email}}</td>
+    <td type="password">{{row.password}}</td>
     <td class="text-right">
       <div *ngIf="!row.confirm">
         <button class="btn btn-warning" (click)="edit(row)"><i class="fa fa-pencil" aria-hidden="true"></i></button>
